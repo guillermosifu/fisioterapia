@@ -235,10 +235,11 @@
 
 .servicios__servicios-container {
   display: grid;
-  justify-items: center;
-  gap: 1rem;
-
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 2rem;
 }
+  
+  
 
 .servicios__servicio {
   display: flex;
@@ -368,8 +369,7 @@
 
 
 
-@media (min-width: 864px) {
-
+@media (min-width: 750px) {
   
 
   /*HEADER*/
@@ -480,9 +480,11 @@
   }
 
   .servicios__servicios-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 
-    grid-template-columns: 1fr 1fr ;
-    gap: 2rem;
+  
 
   }
 
